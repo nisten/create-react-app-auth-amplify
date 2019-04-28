@@ -1,0 +1,19 @@
+{
+    "novera": {
+        "awscloudformation": {
+            "AuthRoleName": "authcra-20190427120205-authRole",
+            "UnauthRoleArn": "arn:aws:iam::612177115370:role/authcra-20190427120205-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::612177115370:role/authcra-20190427120205-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "authcra-20190427120205-deployment",
+            "UnauthRoleName": "authcra-20190427120205-unauthRole",
+            "StackName": "authcra-20190427120205",
+            "StackId": "arn:aws:cloudformation:us-west-2:612177115370:stack/authcra-20190427120205/cdee24c0-6905-11e9-bcaf-028e369bfbbe"
+        },
+        "categories": {
+            "auth": {
+                "cognitocf0c6096": {}
+            }
+        }
+    }
+}

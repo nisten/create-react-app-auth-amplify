@@ -1,0 +1,34 @@
+version: '3'
+services:
+
+  gethconsole:
+    image: iobound/ethereum-geth
+    build:
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    links:
+      - devnet
+      - testnet
+
+  testnet:
+    image: iobound/ethereum-geth
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["sh", "/root/testnet.sh"]
+    stdin_open: true
+    tty: true
+
+  devnet:
+    image: iobound/ethereum-geth
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["sh", "/root/devnet.sh"]
+    stdin_open: true
+    tty: true
+    expose:
+      - 8545
+      - 30303
